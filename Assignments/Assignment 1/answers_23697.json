@@ -1,8 +1,8 @@
 {
   "T1": {
     "voice": "Skeptical yet curious",
-    "explanation": "Backpropagation is a method for training neural networks by adjusting weights based on error gradients. It uses a chain rule to propagate errors backward, optimizing the network's output.",
-    "ending_question": "But how exactly does this error propagate back through the network to adjust weights? What's the role of the gradient in this process?"
+    "explanation": "Backpropagation is the neural network's way of adjusting weights based on error signals. It uses a chain rule to propagate error backward, optimizing weights for better predictions. This process is akin to teaching a machine to learn from mistakes.",
+    "ending_question": "But how does this mathematical formula translate to real-world neural networks? How do we ensure they learn effectively?"
   },
   "T2": {
     "result": 68.0,
@@ -11,19 +11,19 @@
   },
   "T3": {
     "zero_shot": {
-      "label": "Refund Issue Resolution",
+      "label": "Refund Issue",
       "confidence": 0.95,
-      "rationale": "This ticket indicates a payment issue but also suggests that the refund process has been initiated. The ticket details the payment failure and an unexpected invoice amount discrepancy. To resolve this issue, please contact customer service immediately and provide them with the correct invoice number and details of the discrepancy."
+      "rationale": "This ticket indicates a payment failure but still shows an invoice amount that differs from the agreed-upon charge. This suggests the refund issue is not resolved immediately. Possible solutions: 1) Contact customer service for a resolution, 2) Review the invoice for any discrepancies, 3) Check if there are any additional fees or charges that might have been overlooked."
     },
     "one_shot": {
-      "label": "Technical",
+      "label": "Billing",
       "confidence": 0.95,
-      "rationale": "The refund request is related to a payment issue, not a billing discrepancy. It's a technical problem requiring immediate attention."
+      "rationale": "The ticket indicates a payment failure but also mentions an invoice discrepancy. This is a refund issue, so classification is Billing."
     },
     "multi_shot": {
       "label": "Technical",
-      "confidence": 0.95,
-      "rationale": "Refund issue requires technical troubleshooting due to payment and invoice mismatch."
+      "confidence": 0.89,
+      "rationale": "Refund issue is technical, requiring immediate action."
     }
   },
   "T4": {
